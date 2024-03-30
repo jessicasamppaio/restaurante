@@ -20,7 +20,7 @@ Esta é uma landing page para um restaurante, desenvolvida como uma demonstraç�
 
 ![Preview 3](./img/screenshot3.png)
 
-- Para visualizar a página e interativa acesse: https://jessicasamppaio.github.io/restaurante/
+- Para visualizar a página completa acesse: https://jessicasamppaio.github.io/restaurante/
 
 ## Autora
 Jéssica Sampaio
