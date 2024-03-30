@@ -64,6 +64,20 @@ footer {
     font-weight: 500;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff9ea;
+    color: rgb(255, 105, 45);
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+  }
+
 
 @media screen and (max-width: 1170px) {
     #testimonials {

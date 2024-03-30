@@ -64,3 +64,44 @@ $(document).ready(function() {
         distance: '20%'
     })
 });
+
+ScrollReveal().reveal('h1', {
+    duration: 1000,
+    delay: 200,
+    distance: '50px',
+    origin: 'bottom'
+  });
+
+  
+  function backToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  
+  window.addEventListener('scroll', function() {
+    var backToTopButton = document.getElementById('back-to-top');
+    if (window.scrollY > 100) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  document.querySelectorAll('#navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
